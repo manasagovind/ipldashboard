@@ -1,0 +1,10 @@
+/* Write your CSS here */
+.latestCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-family: 'Bree Serif';
+  color: #ffffff;
+}
