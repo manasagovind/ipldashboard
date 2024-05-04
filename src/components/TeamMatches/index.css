@@ -8,6 +8,14 @@
   font-family: 'Bree Serif';
   color: #ffffff;
 }
+.backButt {
+  background-color: #5019b8;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  border-radius: 8px;
+  height:40px;
+  width:80px;
+}
 .latestMatch {
   background-color: #1e293b;
   color: #ffffff;
@@ -23,7 +31,6 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 li {
   width: 30vw;

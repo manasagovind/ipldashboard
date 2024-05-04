@@ -18,6 +18,11 @@ class TeamMatches extends Component {
     this.getTeamMatchDet()
   }
 
+  changeRoute = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   getTeamMatchDet = async () => {
     const {match} = this.props
     const {params} = match
@@ -75,6 +80,9 @@ class TeamMatches extends Component {
             <MatchCard match={match} key={match.id} />
           ))}
         </ul>
+        <button type="button" className="backButt" onClick={this.changeRoute}>
+          Back
+        </button>
       </div>
     )
   }
@@ -84,7 +92,7 @@ class TeamMatches extends Component {
     return (
       <div className="teamMatchesCont">
         {isLoading ? (
-          <div testid="loader">
+          <div data-testid="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
           </div>
         ) : (
